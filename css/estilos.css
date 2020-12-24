@@ -1,0 +1,430 @@
+/*Codigos para las fuentes
+font-family: 'Indie Flower', cursive;
+font-family: 'Mulish', sans-serif;
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Pompiere', cursive;
+*/
+
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+.contenedor{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+
+/*Botoncito*/
+.ver-mas{
+  background-color: #f45815;
+  text-decoration: none;
+  color: white;
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 5px;
+  margin: 10px;
+}
+
+/*Encabezado*/
+.mini-encabezado{
+  margin: auto;
+  background-color: rgb(170, 170, 170);
+  text-align: center;
+  color: white;
+  font-family: 'Mulish', sans-serif;
+}
+header{
+  background-color: #e4e4e4;
+  padding: 10px;
+}
+.logo{
+  width: 120px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.logo-div{
+  order: 3;
+}
+.menu{
+  width: 1000px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.enlace{
+  text-decoration: none;
+  color: black;
+  font-family: 'Pompiere', cursive;
+  font-size: 40px;
+  background-color: white;
+  padding: 4px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.enlace-sobremi{
+  order: 1;
+}
+.enlace-cartapesta{
+  order: 2;
+}
+.enlace-papelmache{
+  order: 4
+}
+.enlace-talleres{
+  order: 5;
+}
+.enlace:hover{
+  background-color: #f45815;
+  color: white;
+  transition: background 1s ease;
+  transition: color 0,5s ease;
+}
+
+/*Banner*/
+.banner{
+  height: 450px;
+  width: 100%;
+  background-image: url(../media/img/Banner2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+.cosito{
+  background-color: rgba(231, 231, 231, 0.33);
+  width: 700px;
+  padding: 10px;
+}
+h2{
+  font-family: 'Indie Flower', cursive;
+  font-size: 45px;
+  color: white;
+  text-align: center;
+}
+.frase-banner{
+  font-family: 'Pompiere', cursive;
+  font-size: 42px;
+  color: white;
+  text-align: center;
+}
+
+/*Papel Mache*/
+.papel-mache{
+  background-color: #e4e4e4;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.papel-mache-fondo{
+  background-color: white;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  width: 1000px;
+}
+.gatito-papel-mache{
+  width: 462px;
+}
+.texto{
+  text-align: center;
+}
+h3{
+  font-family: 'Pompiere', cursive;
+  font-size: 55px;
+}
+.textos{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 35px;
+}
+.vermas{
+  margin: 20px;
+  font-size: 20px;
+}
+
+/*Cartapesta*/
+.ovejitas-cartapesta{
+  width: 462px;
+}
+.cartapesta{
+  padding: 20px;
+}
+.cartapesta-fondo{
+    background-color: #e4e4e4;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    width: 1000px;
+}
+
+/*Talleres*/
+.talleres{
+  margin: auto;
+  width: 1000px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+/*Taller de Porcelana fría*/
+.talleres-porcelana-fria{
+  width: 496px;
+  text-align: center;
+  background-color: #e4e4e4;
+  padding: 10px;
+  margin: auto;
+}
+.titulo{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 30px;
+}
+.img-taller{
+  width: 296px;
+  margin: auto;
+}
+
+/*Taller de cartapesta*/
+.taller-de-papel-mache{
+  width: 496px;
+  text-align: center;
+  background-color: #e4e4e4;
+  padding: 10px;
+  margin: auto;
+}
+
+/*Pié de página*/
+footer{
+  background-color: rgb(170, 170, 170);
+  padding: 10px;
+  font-family: 'Mulish', sans-serif;
+  color: white;
+  margin-top: 20px;
+}
+
+/*Media query 1*/
+@media all and (max-width:1024px) {
+  .menu{
+    width: 100%;
+  }
+  .enlace{
+    font-size: 40px;
+    padding-left: 23px;
+    padding-right: 23px;
+  }
+  .cartapesta-fondo{
+    width: 97%;
+    margin: auto;
+  }
+  .papel-mache-fondo{
+    width: 93%;
+    margin: auto;
+  }
+  .talleres{
+    width: 94%
+  }
+}
+
+/*Media query 2*/
+@media all and (max-width: 930px) {
+  h3{
+    font-size: 40px;
+  }
+  .textos{
+    font-size: 30px;
+  }
+  .ovejitas-cartapesta{
+    width: 350px;
+  }
+  .gatito-papel-mache{
+    width: 350px;
+  }
+}
+
+/*Media query 3*/
+@media all and (max-width: 843px) {
+  .enlace{
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+/*Media query 4*/
+@media all and (max-width: 821px) {
+  .talleres{
+    flex-direction: column;
+    margin-top: 10px;
+  }
+}
+
+/*Media query 5*/
+@media all and (max-width: 768px) {
+  .logo{
+    width: 100px;
+  }
+  .enlace{
+      font-size: 30px;
+  }
+}
+
+/*Media query 6*/
+@media all and (max-width: 700px) {
+  .ovejitas-cartapesta{
+    width: 300px;
+  }
+  .gatito-papel-mache{
+    width: 300px;
+  }
+}
+
+/*Media query 7*/
+@media all and (max-width: 630px) {
+  .textos{
+    font-size: 20px;
+  }
+  h3{
+    font-size: 30px;
+  }
+  .ver-mas{
+    font-size: 13px;
+  }
+}
+
+/*Media query 8*/
+@media all and (max-width: 605px) {
+  .enlace{
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  h2{
+    font-size: 35px;
+  }
+  .frase-banner{
+    font-size: 30px;
+  }
+  .cosito{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .titulo{
+    font-size: 25px;
+  }
+  .texto-footer-header {
+    font-size: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
+/*Media query 9*/
+@media all and (max-width: 550px) {
+  .logo{
+    margin: auto;
+  }
+  .logo-div{
+    order: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .menu{
+    flex-wrap: wrap;
+  }
+  .ovejitas-cartapesta{
+    width: 200px;
+    margin-left: 10px;
+  }
+  .gatito-papel-mache{
+    width: 200px;
+    margin-left: 10px;
+  }
+  .img-taller{
+    width: 200px;
+  }
+  .titulo{
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .talleres-porcelana-fria{
+    width: 320px;
+  }
+  .taller-de-papel-mache{
+    width: 320px;
+  }
+}
+
+/*Media query 10*/
+@media all and (max-width: 500px) {
+  .papel-mache-fondo{
+    flex-direction: column;
+  }
+  .cartapesta-fondo{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+/*Media query 11*/
+@media all and (max-width: 425px) {
+  .enlace{
+    font-size: 25px;
+  }
+}
+
+/*Media query 12*/
+@media all and (max-width: 375px) {
+  .frase-banner{
+    display: none;
+  }
+  .mini-encabezado{
+    display: none;
+  }
+}
+
+/*Media query 13*/
+@media all and (max-width: 320px) {
+  .menu{
+    height: 100px;
+  }
+  .logo-div{
+    width: auto;
+  }
+  .enlace-sobremi{
+    position: relative;
+    bottom: 30px;
+    left: 10px;
+  }
+  .enlace-cartapesta{
+    position: relative;
+    bottom: 30px;
+    left: 10px;
+  }
+  .enlace-papelmache{
+    position: relative;
+    bottom: 55px;
+    left: 80px;
+  }
+  .enlace-talleres{
+    position: relative;
+    bottom: 55px;
+    left: 25px;
+  }
+  .enlace{
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  .talleres{
+    margin: inherit;
+  }
+  .talleres-porcelana-fria{
+    width: 300px;
+  }
+  .taller-de-papel-mache{
+    width: 300px;
+  }
+}
